@@ -2,16 +2,13 @@ package com.example.Orderservice.dto;
 
 import lombok.*;
 
-import java.util.List;
-
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class OrderRequestDTO {
+public class OrderItemDTO {
 
-    private Long userId;
-    private List<OrderItemDTO> items;
-
+    private Long productId;
+    private int quantity;
 }
